@@ -1,0 +1,45 @@
+@model IEnumerable<bsis3b_web.Models.Type>
+
+<div mt-3>
+    <div class="row">
+        <div class="col-6">
+            <h2>TypeList</h2>
+        </div>
+        <div class="col-6">
+            <a asp-action="Create" class="btn btn-primary">Add New Type</a>
+        </div>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col">Item Name</th>
+        <th scope="col">Type</th>
+        <th></th>
+        </tr>
+    </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td width="45%">@item.Item.Name</td>
+                <td width="45%">@item.Name</td>
+                
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+        
+    }
+    else
+    {
+        <p>No Type Exist.</p>
+    }
+    
+</div>
