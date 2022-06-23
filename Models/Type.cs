@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace bsis3b_web.Models
@@ -7,6 +8,7 @@ namespace bsis3b_web.Models
         public int Id { get; set; }
         [Required]
         [StringLength(50)]
+        [DisplayName("Type")]
         
         public string Name { get; set; }
 

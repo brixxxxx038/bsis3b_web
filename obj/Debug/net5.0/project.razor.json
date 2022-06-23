@@ -15624,8 +15624,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Type\\Delete.cshtml",
+      "TargetPath": "Views\\Type\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Type\\Index.cshtml",
       "TargetPath": "Views\\Type\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Type\\Edit.cshtml",
+      "TargetPath": "Views\\Type\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15656,6 +15666,11 @@
     {
       "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Item\\Login.cshtml",
       "TargetPath": "Views\\Item\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Type\\Create.cshtml",
+      "TargetPath": "Views\\Type\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
