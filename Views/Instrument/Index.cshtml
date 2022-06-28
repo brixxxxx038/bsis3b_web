@@ -1,0 +1,51 @@
+@model IEnumerable<bsis3b_web.Models.Instrument>
+
+<div mt-3>
+    <div class="row">
+        <div class="col-6">
+            <h2>Instrument</h2>
+        </div>
+        <div class="col-6">
+            <a asp-action="Create" class="btn btn-primary">Add New Instrument</a>
+        </div>
+    </div>
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Item</th>
+        <th scope="col">Type</th>
+        <th></th>
+        </tr>
+    </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td ><img src="@item.ImagePath" alt="" width="50"></td>
+                <td width="25%">@item.Item.Name</td>
+                <td width="25%">@item.Type.Name</td>
+                <td width="25%">@item.Price</td>
+                
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Edit</a>
+                    <form method="post" action="Delete ">
+                        <button onclick="if(!confirm('Are you sure you want to delete ?')) {return false}" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</button>
+                    </form>
+                    
+                </td>
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+        
+    }
+    else
+    {
+        <p>No Instrument Exist.</p>
+    }
+    
+</div>

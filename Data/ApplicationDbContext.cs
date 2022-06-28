@@ -13,5 +13,8 @@ namespace bsis3b_web.Data
 
         public DbSet<Item> Items { get; set; }
         public DbSet<Type> Types { get; set; }
+
+        public DbSet<Instrument> Instruments { get; set; }
     }
-} 
+    
+}  

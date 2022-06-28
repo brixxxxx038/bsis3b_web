@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Instrument\\Index.cshtml",
+      "TargetPath": "Views\\Instrument\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Type\\Index.cshtml",
       "TargetPath": "Views\\Type\\Index.cshtml",
       "FileKind": "mvc"
@@ -15656,6 +15661,11 @@
     {
       "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Item\\Delete.cshtml",
       "TargetPath": "Views\\Item\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\johnb\\Desktop\\bsis3b-web\\Views\\Instrument\\Create.cshtml",
+      "TargetPath": "Views\\Instrument\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
